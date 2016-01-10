@@ -55,3 +55,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# migrations files
+DjangoProj/FIStruktura/migrations/**
+
+# workspace stuff
+DjangoProj/.idea/**
