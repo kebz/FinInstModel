@@ -61,3 +61,6 @@ DjangoProj/FIStruktura/migrations/**
 
 # workspace stuff
 DjangoProj/.idea/**
+
+# weird diagram file
+*.vpp~1
