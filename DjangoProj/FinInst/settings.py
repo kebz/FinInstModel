@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'FIStruktura.apps.FistrukturaConfig',#.apps.PollsConfig',
+    'klient.apps.KlientConfig',#.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
