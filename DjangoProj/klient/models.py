@@ -6,9 +6,9 @@ class Klient(models.Model):
    # uzytkownik = models.ForeignKey(User, blank=True, null=True)
 
     id_klienta= models.CharField( primary_key=True, null=False, max_length=500, default="KL")
-    imie = models.CharField( max_length=50)
-    nazwisko = models.CharField(max_length=50)
-    pesel = models.BigIntegerField(unique=True)
+    imie = models.CharField( max_length=50, default=None)
+    nazwisko = models.CharField(max_length=50, default=None)
+    pesel = models.BigIntegerField(unique=True, default=None)
 
 
     class Meta:
@@ -16,12 +16,12 @@ class Klient(models.Model):
 
 class Kontakt(models.Model):
     id_klienta = models.ForeignKey('Klient',to_field='Klient.id_klienta', on_delete=models.CASCADE)
-    numer_telefonu = models.BigIntegerField()
-    numer = models.CharField( max_length=50)
-    ulica = models.CharField( max_length=50)
-    miasto = models.CharField( max_length=50)
-    kod_pocztowy = models.CharField( max_length=6)
-    panstwo = models.CharField( max_length=50)
+    numer_telefonu = models.BigIntegerField(default=None)
+    numer = models.CharField( max_length=50, default=None)
+    ulica = models.CharField( max_length=50, default=None)
+    miasto = models.CharField( max_length=50, default=None)
+    kod_pocztowy = models.CharField( max_length=6, default=None)
+    panstwo = models.CharField( max_length=50, default=None)
 
     # company_name = models.CharField(_("Company name"), max_length=50, blank=True, null=True)
     # phone = models.CharField(_("Phone"), blank=True, null=True, max_length=20)
