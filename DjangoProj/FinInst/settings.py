@@ -31,8 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'globalnewartosci.apps.GlobalnewartosciConfig',
+    'platnosci.apps.PlatnosciConfig',
     'klient.apps.KlientConfig',#.apps.PollsConfig',
-    'katalog.app.KatalogConfig'
+    'katalog.apps.KatalogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
