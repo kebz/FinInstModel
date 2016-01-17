@@ -5,15 +5,15 @@ from django.utils.translation import ugettext_lazy as _
 
 class Usluga(models.Model):
     id_uslugi= models.CharField( primary_key=True, max_length=500, default="US")
-    typ_uslugi = models.ForeignKey('globalnewartosci.TypUslugi', to_field='typ_uslugi',  on_delete=models.CASCADE)
+    typ_uslugi = models.ForeignKey('globalnewartosci.TypUslugi', to_field='globalnewartosci.TypUslugi.typ_uslugi', on_delete=models.CASCADE)
 
 class Oprocentowanie(models.Model):
-    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', on_delete=models.CASCADE)
+    id_uslugi=models.ForeignKey('Usluga', to_field='Usluga.id_uslugi', on_delete=models.CASCADE)
     oprocentowanie=models.FloatField( default=0.0 )
-    st_rynkowa=models.ForeignKey('globalnewartosci.Stopa_rynkowa', to_field='st_rynkowa', on_delete=models.CASCADE)
+    st_rynkowa=models.ForeignKey('globalnewartosci.Stopa_rynkowa', to_field='globalnewartosci.Stopa_rynkowa.st_rynkowa', on_delete=models.CASCADE)
 
 class Wartosc(models.Model):
-    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', on_delete=models.CASCADE)
+    id_uslugi=models.ForeignKey('Usluga', to_field='Usluga.id_uslugi', on_delete=models.CASCADE)
     wartosc_t=models.FloatField( default=0.0 )
     wartosc_0=models.FloatField( default=0.0 )
 
