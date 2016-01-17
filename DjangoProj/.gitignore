@@ -58,10 +58,10 @@ docs/_build/
 target/
 
 # migrations files
-DjangoProj/FIStruktura/migrations/**
+**/migrations/**
 
 # workspace stuff
-DjangoProj/.idea/**
+**/.idea/**
 
 # weird diagram file
 *.vpp~1
