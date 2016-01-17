@@ -13,13 +13,11 @@ class Kontakt(models.Model):
     id_klienta = models.ForeignKey('Klient',to_field='id_klienta', on_delete=models.CASCADE)
     numer_telefonu = models.BigIntegerField(default=None)
     numer = models.CharField( max_length=50, default=None)
-
-
-    class Meta:
-       app_label = 'klient'
-
-class Adres(models.Model)
     ulica = models.CharField( max_length=50, default=None)
     miasto = models.CharField( max_length=50, default=None)
     kod_pocztowy = models.CharField( max_length=6, default=None)
     panstwo = models.CharField( max_length=50, default=None)
+
+    class Meta:
+       app_label = 'klient'
+
