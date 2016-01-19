@@ -1,0 +1,41 @@
+SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:08.798727+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'globalnewartosci' AND "django_content_type"."model" = 'stopa_rynkowa')SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:09.260816+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:12.759241+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+SELECT (1) AS "a" FROM "globalnewartosci_stopa_rynkowa" WHERE "globalnewartosci_stopa_rynkowa"."st_rynkowa" = 123.0 LIMIT 1
+
+SELECT (1) AS "a" FROM "globalnewartosci_stopa_rynkowa" WHERE "globalnewartosci_stopa_rynkowa"."st_rynkowa" = 123.0 LIMIT 1
+
+INSERT INTO "globalnewartosci_stopa_rynkowa" ("st_rynkowa") VALUES (123.0)
+
+INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2016-01-19T17:18:13.034444+00:00'::timestamptz, 1, 12, '123.0', 'Stopa_rynkowa object', 1, 'Dodany.') RETURNING "django_admin_log"."id"SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:12.774254+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+SELECT (1) AS "a" FROM "globalnewartosci_stopa_rynkowa" WHERE "globalnewartosci_stopa_rynkowa"."st_rynkowa" = 123.0 LIMIT 1SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:13.395768+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:19.301680+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+SELECT (1) AS "a" FROM "globalnewartosci_stopa_rynkowa" WHERE "globalnewartosci_stopa_rynkowa"."st_rynkowa" = 121.0 LIMIT 1
+
+SELECT (1) AS "a" FROM "globalnewartosci_stopa_rynkowa" WHERE "globalnewartosci_stopa_rynkowa"."st_rynkowa" = 121.0 LIMIT 1
+
+INSERT INTO "globalnewartosci_stopa_rynkowa" ("st_rynkowa") VALUES (121.0)
+
+INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2016-01-19T17:18:19.437074+00:00'::timestamptz, 1, 12, '121.0', 'Stopa_rynkowa object', 1, 'Dodany.') RETURNING "django_admin_log"."id"SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:19.503123+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+SELECT COUNT(*) AS "__count" FROM "globalnewartosci_stopa_rynkowa"
+
+SELECT "globalnewartosci_stopa_rynkowa"."st_rynkowa" FROM "globalnewartosci_stopa_rynkowa" ORDER BY "globalnewartosci_stopa_rynkowa"."st_rynkowa" DESCSELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'pitwwha62qukkn2d1gpbtyht55prmkdn' AND "django_session"."expire_date" > '2016-01-19T17:18:20.001563+00:00'::timestamptz)
+
+SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
