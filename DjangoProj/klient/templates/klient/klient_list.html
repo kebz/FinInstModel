@@ -1,0 +1,37 @@
+<html>
+
+	<head>
+        	<title>Tu beda klienci czy cos</title>
+    	</head>
+<body background="clients.jpg">
+
+	
+        <div>
+
+	    <strong><p> Panel admina klik:</p></strong>
+            <h1><a href="http://127.0.0.1:8000/admin/">Admin</a></h1>
+	
+        </div>
+
+<br />
+
+	<div>	
+		<h1>KLIENCI:</h1>
+		
+			
+			{% for klient in wypisz_klientow %}
+				<div>
+				<p>id:{{ klient.id_klienta }}</p>
+				<p>imie:{{ klient.imie }}</p>
+				<p>nazwisko:{{ klient.nazwisko }}</p>
+				<hr />
+				</div>
+
+			{% endfor %}
+		
+	</div>
+
+
+</body>
+
+</html>
