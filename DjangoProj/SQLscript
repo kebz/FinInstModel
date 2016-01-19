@@ -1,0 +1,35 @@
+3 queries in 0,008 seconds:
+
+[1] 0.003s: SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-01-19T16:30:01.897362+00:00'::timestamptz AND "django_session"."session_key" = '01tvsq2gjyjcd7hnk44caneu7k6cjc0l')
+
+[2] 0.002s: SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+[3] 0.003s: SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ( "django_admin_log"."user_id" = "auth_user"."id" ) LEFT OUTER JOIN "django_content_type" ON ( "django_admin_log"."content_type_id" = "django_content_type"."id" ) WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 103 queries in 0,016 seconds:
+
+[1] 0.016s: SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-01-19T16:32:48.264374+00:00'::timestamptz AND "django_session"."session_key" = '01tvsq2gjyjcd7hnk44caneu7k6cjc0l')
+
+[2] 0.000s: SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+[3] 0.000s: SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ( "django_admin_log"."user_id" = "auth_user"."id" ) LEFT OUTER JOIN "django_content_type" ON ( "django_admin_log"."content_type_id" = "django_content_type"."id" ) WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 104 queries in 0,008 seconds:
+
+[1] 0.004s: SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-01-19T16:32:59.297297+00:00'::timestamptz AND "django_session"."session_key" = '01tvsq2gjyjcd7hnk44caneu7k6cjc0l')
+
+[2] 0.002s: SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+[3] 0.001s: SELECT COUNT('*') AS "__count" FROM "klient_klient"
+
+[4] 0.001s: SELECT "klient_klient"."id_klienta", "klient_klient"."imie", "klient_klient"."nazwisko", "klient_klient"."pesel" FROM "klient_klient" ORDER BY "klient_klient"."id_klienta" DESC2 queries in 0,004 seconds:
+
+[1] 0.003s: SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-01-19T16:32:59.575313+00:00'::timestamptz AND "django_session"."session_key" = '01tvsq2gjyjcd7hnk44caneu7k6cjc0l')
+
+[2] 0.001s: SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 15 queries in 0,008 seconds:
+
+[1] 0.002s: SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-01-19T16:33:05.994399+00:00'::timestamptz AND "django_session"."session_key" = '01tvsq2gjyjcd7hnk44caneu7k6cjc0l')
+
+[2] 0.001s: SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1
+
+[3] 0.001s: SELECT COUNT('*') AS "__count" FROM "klient_klient"
+
+[4] 0.002s: SELECT "klient_klient"."id_klienta", "klient_klient"."imie", "klient_klient"."nazwisko", "klient_klient"."pesel" FROM "klient_klient" WHERE "klient_klient"."id_klienta" IN ('K004', 'K003', 'K002', 'K001') ORDER BY "klient_klient"."id_klienta" DESC
+
+[5] 0.002s: SELECT "klient_kontakt"."id", "klient_kontakt"."id_klienta_id", "klient_kontakt"."numer_telefonu", "klient_kontakt"."numer", "klient_kontakt"."ulica", "klient_kontakt"."miasto", "klient_kontakt"."kod_pocztowy", "klient_kontakt"."panstwo", "klient_klient"."id_klienta", "klient_klient"."imie", "klient_klient"."nazwisko", "klient_klient"."pesel" FROM "klient_kontakt" INNER JOIN "klient_klient" ON ( "klient_kontakt"."id_klienta_id" = "klient_klient"."id_klienta" ) WHERE "klient_kontakt"."id_klienta_id" IN ('K004', 'K003', 'K002', 'K001')
