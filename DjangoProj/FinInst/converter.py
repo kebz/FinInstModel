@@ -31,13 +31,10 @@ import os
 class SQLLogToConsoleMiddleware:
     def process_response(self, request, response):
         if settings.DEBUG and connection.queries:
-            # sqlcodefile = open('SQLscript', 'w')
             time = sum([float(q['time']) for q in connection.queries])
-            t = Template("{{count}} quer{{count|pluralize:\"y,ies\"}} in {{time}} seconds:\n\n{% for sql in sqllog %}[{{forloop.counter}}] {{sql.time}}s: {{sql.sql|safe}}{% if not forloop.last %}\n\n{% endif %}{% endfor %}")
+            t = Template("{% for sql in sqllog %}{{sql.sql|safe}}{% if not forloop.last %}\n\n{% endif %}{% endfor %}")
             print(t.render(Context({'sqllog':connection.queries,'count':len(connection.queries),'time':time})))
-            with open('SQLscript', 'a') as sqlcodefile:
+            with open('SQLscript.txt', 'a') as sqlcodefile:
                 sqlcodefile.write(t.render(Context({'sqllog':connection.queries,'count':len(connection.queries),'time':time})))
-
-            # sqlcodefile.write(t.render(Context({'sqllog':connection.queries,'count':len(connection.queries),'time':time})))
             sqlcodefile.close()
         return response
