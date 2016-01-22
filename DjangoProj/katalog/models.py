@@ -8,12 +8,12 @@ class Usluga(models.Model):
     typ_uslugi = models.ForeignKey('globalnewartosci.TypUslugi', to_field='typ_uslugi',  on_delete=models.CASCADE)
 
 class Oprocentowanie(models.Model):
-    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', on_delete=models.CASCADE)
+    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', on_delete=models.CASCADE, primary_key=True)
     oprocentowanie=models.FloatField( default=0.0 )
     st_rynkowa=models.ForeignKey('globalnewartosci.Stopa_rynkowa', to_field='st_rynkowa', on_delete=models.CASCADE)
 
 class Wartosc(models.Model):
-    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', on_delete=models.CASCADE)
+    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', on_delete=models.CASCADE, primary_key=True)
     wartosc_t=models.FloatField( default=0.0 )
     wartosc_0=models.FloatField( default=0.0 )
 
