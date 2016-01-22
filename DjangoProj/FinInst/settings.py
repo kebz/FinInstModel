@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'portfel.apps.PortfelConfig',
     'globalnewartosci.apps.GlobalnewartosciConfig',
     'platnosci.apps.PlatnosciConfig',
     'klient.apps.KlientConfig',#.apps.PollsConfig',

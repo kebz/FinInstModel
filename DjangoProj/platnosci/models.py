@@ -7,10 +7,16 @@ class Platnosc(models.Model):
      wartosc=models.FloatField( default=0.0 )
      czestotliwosc=models.IntegerField(default=1)           #ile razy w roku platnosc
      dlugosc=models.FloatField(null=True)                   #jak długo (w latach)
+     class Meta:
+         app_label='platnosci'
+         verbose_name_plural='platnosci'
 
 class Historia_platnosci(models.Model):
     id_uslugi=models.ForeignKey('katalog.Usluga', to_field='id_uslugi', on_delete=models.CASCADE, primary_key=True)
     kwota=models.FloatField( default=0.0 )
     data=models.DateTimeField (default=timezone.now)
 
+    class Meta:
+        app_label='platnosci'
+        verbose_name_plural='historie platnosci'
 # Create your models here.
