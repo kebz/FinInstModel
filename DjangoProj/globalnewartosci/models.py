@@ -1,7 +1,7 @@
 from django.db import models
 
 class TypUslugi(models.Model):
-    typ_uslugi = models.CharField(primary_key=True, max_length=80)
+    typ_uslugi = models.CharField(primary_key=True, max_length=50)
 
     class Meta:
         app_label='globalnewartosci'
