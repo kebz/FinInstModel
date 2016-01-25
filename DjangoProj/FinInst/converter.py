@@ -36,5 +36,6 @@ class SQLLogToConsoleMiddleware:
             print(t.render(Context({'sqllog':connection.queries,'count':len(connection.queries),'time':time})))
             with open('SQLscript.txt', 'a') as sqlcodefile:
                 sqlcodefile.write(t.render(Context({'sqllog':connection.queries,'count':len(connection.queries),'time':time})))
+                sqlcodefile.write("\n")
             sqlcodefile.close()
         return response
