@@ -85,9 +85,10 @@ class Klient(models.Model):
 
 
 class Telefon(models.Model):
-    id_klienta = models.ForeignKey('Klient', to_field='id_klienta', db_column='id_klienta', primary_key=True,
+    numer_telefonu = models.CharField(max_length=50, default=None)
+    id_klienta = models.ForeignKey('Klient', to_field='id_klienta', db_column='id_klienta',
                                    on_delete=models.CASCADE)
-    numer_telefonu = models.BigIntegerField(default=None)
+
 
     class Meta:
         app_label = 'klient'
@@ -100,9 +101,9 @@ class Telefon(models.Model):
 
 
 class Email(models.Model):
-    id_klienta = models.ForeignKey('Klient', to_field='id_klienta', db_column='id_klienta', primary_key=True,
-                                   on_delete=models.CASCADE)
     email = models.CharField(max_length=50, default=None)
+    id_klienta = models.ForeignKey('Klient', to_field='id_klienta', db_column='id_klienta',
+                                   on_delete=models.CASCADE)
 
     class Meta:
         app_label = 'klient'

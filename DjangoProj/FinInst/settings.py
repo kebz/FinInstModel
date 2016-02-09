@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'FinInst.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fininstmodel',
+        'NAME': 'licencjatdb',
         'USER': 'postgres',
         'PASSWORD': 'itispass',
         'HOST': '127.0.0.1',
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'pl'
 
 TIME_ZONE = 'Europe/Warsaw'
 

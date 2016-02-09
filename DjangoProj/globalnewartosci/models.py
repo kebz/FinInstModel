@@ -7,6 +7,9 @@ class TypUslugi(models.Model):
         app_label='globalnewartosci'
         verbose_name_plural = 'typ uslugi'
 
+    def __unicode__(self):
+        return self.typ_uslugi
+
 class Stopa_rynkowa(models.Model):
     st_rynkowa=models.FloatField(primary_key=True)
 

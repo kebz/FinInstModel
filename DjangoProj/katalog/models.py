@@ -13,8 +13,8 @@ class Usluga(models.Model):
         ordering = ['typ_uslugi']
 
 class Oprocentowanie(models.Model):
-    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', db_column='id_uslugi', primary_key=True, on_delete=models.CASCADE)
     oprocentowanie=models.FloatField( default=0.0 )
+    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', db_column='id_uslugi', primary_key=True, on_delete=models.CASCADE)
     st_rynkowa=models.ForeignKey('globalnewartosci.Stopa_rynkowa', to_field='st_rynkowa')
 
     class Meta:
@@ -23,9 +23,9 @@ class Oprocentowanie(models.Model):
         ordering = ['id_uslugi']
 
 class Wartosc(models.Model):
-    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', db_column='id_uslugi', primary_key=True, on_delete=models.CASCADE )
     wartosc_t=models.FloatField( default=0.0 )
     wartosc_0=models.FloatField( default=0.0 )
+    id_uslugi=models.ForeignKey('Usluga', to_field='id_uslugi', db_column='id_uslugi', primary_key=True, on_delete=models.CASCADE )
 
     class Meta:
         app_label = 'katalog'

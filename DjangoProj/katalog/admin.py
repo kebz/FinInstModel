@@ -2,8 +2,7 @@ from django.contrib import admin
 from katalog.models import Usluga, Oprocentowanie, Wartosc
 
 class UslugaAdmin(admin.ModelAdmin):
-    list_display = ('typ_uslugi',)
-    # search_fields = ('typ_uslugi',)
+    list_display = ('typ_uslugi', 'id_uslugi')
 
 class OprocentownieAdmin(admin.ModelAdmin):
     list_display = ('oprocentowanie',)
